@@ -1,0 +1,24 @@
+Author: Lachlan Sinclair
+Last Modified: 11/3/2019
+Project 1: chat client and chat serve.
+
+‌Instructions to run:
+Step 1: start up chatserve.
+python chatserve.py [portnumber]
+
+Step 2: Compile chatclient.
+gcc -o chatclient chatclient.c
+
+Step 3: Run the chat client.
+./chatclient [HostName] [Portnumber]
+
+Using the program:
+Initiate contact by entering a user handle on the chat client, then enter 
+a message to send to the server, then repsond from the chatserve process, repeat. 
+Use \quit to end the contection. Use crtl+c to exit out of the chatserve process.
+
+Note: I had a conversation with the professor on Piazza about sending the handles in every message.
+He ok'd me passing the handles only once per connection since it is farm more effiecent. He asked me
+to mention this here and to link the portion of the rubric this affects:
+"Verification - chatclient Handle
+Gets user "handle", displays "handle" at chatclient prompt, sends "handle" to chatserve with each message"

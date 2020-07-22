@@ -1,0 +1,19 @@
+Author: Lachlan Sinclair
+Last modified: 12/1/2019
+Extra credit: my server is multithreaded
+
+Intructions to run:
+Step 1: compile the server
+gcc -lm -o ftserver ftserver.c
+
+Step 2: startup the server
+./ftserver [portnumber]
+
+Step 3: send a command using python
+python ftclient.py [host name] [server port] [commands] [dataport]
+
+Using the program:
+When setting up the server you will need to provide it a port that that is not already in use. The dataport provided
+to the client will also need to not be in use. The program accepts two commands: -l to retrive the directory from the sever and
+-g [filename] to copy a file. Any other commands will recieve a invalid command message. To end the server process send it a sigint
+by using the key combination ctrl+c.
